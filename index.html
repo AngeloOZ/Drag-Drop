@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Drag & Drop</title>
+
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" method="GET" enctype="multipart/form-data" id="form-files">
+            <input type="file" multiple class="hide" id="inputFiles">
+            <div class="drag-zone" id="drag-zone">
+                <div class="drag-zone-information">
+                    <i class='bx bx-cloud-upload'></i>
+                    <h2 class="drag-zone-title">Drag & Drop Files Here</h2>
+                </div>
+                <div class="btn-select-files" id="btn-select-files">Select files</div>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
