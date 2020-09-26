@@ -56,11 +56,9 @@ function progressUploadFile(fileReader, div){
 }
 function uploadFinishFile(fileReader,div, files){
     fileReader.addEventListener('load', e =>{
-        setTimeout(()=>{
-            div.querySelector('.progress').style.width = `0%`;
-            div.querySelector('.progress').textContent = '';
-            div.querySelector('img').setAttribute('src',e.target.result)
-            fileInput.files = files;
-        },1000)
+        div.querySelector('.progress').style.width = `0%`;
+        div.querySelector('.progress').textContent = '';
+        div.querySelector('img').setAttribute('src',e.target.result)
+        fileInput.files = files;
     })
 }
